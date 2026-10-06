@@ -1,0 +1,15 @@
+{
+  "name": "@bike-ride/weather",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file-if-exists=../../.env src/main.ts"
+  },
+  "dependencies": {
+    "@bike-ride/a2a": "workspace:*",
+    "@bike-ride/geometry": "workspace:*",
+    "@bike-ride/llm": "workspace:*",
+    "zod": "^4.6.5"
+  }
+}
