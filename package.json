@@ -1,0 +1,25 @@
+{
+  "name": "a2a-bike-ride-planner",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "pnpm --parallel --filter \"./agents/*\" start",
+    "plan": "pnpm --filter @bike-ride/cli plan",
+    "typecheck": "tsc",
+    "lint": "oxlint",
+    "format": "oxfmt",
+    "format:check": "oxfmt --check",
+    "check": "pnpm format:check && pnpm lint && pnpm typecheck"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "oxfmt": "^0.71.0",
+    "oxlint": "^1.86.0",
+    "typescript": "^7.0.2"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "packageManager": "pnpm@9.15.1"
+}
