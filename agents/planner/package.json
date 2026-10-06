@@ -1,0 +1,15 @@
+{
+  "name": "@bike-ride/planner",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file-if-exists=../../.env src/main.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.131.0",
+    "@bike-ride/a2a": "workspace:*",
+    "@bike-ride/llm": "workspace:*",
+    "zod": "^4.6.5"
+  }
+}
